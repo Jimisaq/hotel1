@@ -1,0 +1,66 @@
+/* CSS styles */
+
+.room-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .room {
+    width: calc(30% - 20px); /* Adjust width of each room with spacing */
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure images do not overflow */
+  }
+  
+  .room img {
+    width: 100%; /* Make images fill their container */
+    height: 50%; /* Preserve aspect ratio */
+    display: block;
+  }
+  
+  .room h2 {
+    position: absolute; /* Position room name on top of image */
+    top: 10px;
+    left: 10px;
+    color: rgb(247, 205, 121); /* Change font color for better visibility */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    font-size: 23px; /* Adjust font size */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+    z-index: 1; /* Ensure room name is above image */
+    text-align: center;
+  }
+  
+  .description-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(39, 30, 28);
+    color: #fff;
+    border: none;
+    border-radius: 0 0 5px 5px; /* Round bottom corners of button */
+    cursor: pointer;
+  }
+  
+  .description-popup {
+    display: Room;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .overall{
+    display: grid; 
+    height: 100%;
+    background-color: #f6ddb2;
+    position: absolute;
+    
+}
