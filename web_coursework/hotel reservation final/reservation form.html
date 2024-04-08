@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hotel Reservation Form</title>
+  <link rel="stylesheet" href="reservation.css" />
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery UI library -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Script for initializing date picker -->
+  <script>
+    $(function() {
+      // Initialize date picker for check-in and check-out dates
+      $("#checkin, #checkout").datepicker({
+        dateFormat: "yy-mm-dd", // Format: YYYY-MM-DD
+        showOtherMonths: true, // Show days from other months
+        selectOtherMonths: true, // Allow selection of days from other months
+        showButtonPanel: true, // Show button panel for easier navigation
+        changeMonth: true, // Allow changing month
+        changeYear: true, // Allow changing year
+        showWeek: true, // Show week numbers
+        firstDay: 1, // Start week on Monday
+        beforeShow: function(input, inst) {
+          // Modify datepicker style
+          setTimeout(function() {
+            inst.dpDiv.css({
+              backgroundColor: "#fff", // White background color
+              border: "1px solid #ccc" // Light border color
+            });
+            inst.dpDiv.find('.ui-datepicker-header').css({
+              backgroundColor: "#4285f4", // Google blue color
+              color: "#fff" // White text color
+            });
+            inst.dpDiv.find('.ui-datepicker-title').css({
+              color: "#fff" // White text color for month and year
+            });
+            inst.dpDiv.find('.ui-state-default').css({
+              color: "#000", // Black text color for numbers
+              backgroundColor: "#fff", // White background color for numbers
+              border: "1px solid #ccc", // Light border color for numbers
+              borderRadius: "50%" // Round corners
+            });
+            inst.dpDiv.find('.ui-state-default.ui-state-active').css({
+              backgroundColor: "#4285f4", // Google blue color for selected day
+              color: "#fff" // White text color for selected day
+            });
+            inst.dpDiv.find('.ui-datepicker-current-day').css({
+              backgroundColor: "#4285f4", // Google blue color for current day
+              color: "#fff" // White text color for current day
+            });
+          }, 0);
+        }
+      });
+    });
+  </script>
+  <style>
+    /* CSS to make the form a bit smaller */
+    body {
+      font-size: 14px; /* Decrease the font size */
+    }
+    .form-container {
+      width: 400px; /* Reduce the width of the form container */
+      margin: 0 auto; /* Center the form container */
+      padding: 20px; /* Add padding */
+    }
+    input[type="text"], select {
+      width: calc(100% - 20px); /* Adjust the width of text inputs and selects */
+      margin-bottom: 10px; /* Add some space between inputs */
+    }
+  </style>
+</head>
+<body>
+  <div class="overall">
+    <div class="form-container">
+      <img src="images/sevarelogo22.jpeg" alt="Hotel Logo" />
+      <p><b>Sevare Hutch Hotel</b></p>
+      <h1>Reservation Form</h1>
+      <form id="reservation-form">
+        <div class="form-group">
+          <label for="rooms">Select a room:</label>
+          <select id="rooms">
+            <option value="room1">Single Room</option>
+            <option value="room2">Double Room</option>
+            <option value="room3">Couple's Room</option>
+            <option value="room4">Suite</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="checkin">Check-in date:</label>
+          <input type="text" id="checkin" />
+        </div>
+        <div class="form-group">
+          <label for="checkout">Check-out date:</label>
+          <input type="text" id="checkout" />
+        </div>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

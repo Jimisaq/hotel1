@@ -1,0 +1,149 @@
+
+/* CSS styles */
+@import "compass";
+@import "normalize";
+@import "autoprefixer";
+
+/* New font family */
+/* You can replace 'Open Sans' with any other Google Font or any font you prefer */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Basic styles and layout */
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+body {
+  background-image: url('images/back2.jpg');
+  background-size: 100; 
+  background-repeat: repeat;
+}
+/* Styles for Single Room */
+#room1-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for Double Room */
+  #room2-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for Couple's Room */
+  #room3-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for Suite */
+  #room4-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #D2B48C;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+  .form-container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* This centers the form horizontally */
+    padding: 20px; /* Optional: Add padding to create space between the form and the browser edges */
+}
+
+.form-container img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Automatically adjust the height */
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.form-container p {
+  text-align: center;
+}
+
+
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  background: linear-gradient(45deg, #4caf50, #3e8e41);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #3e8e41, #4caf50);
+}
+
+.room-info {
+  margin-bottom: 20px;
+}
+
+.room-info img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
