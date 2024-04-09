@@ -1,6 +1,6 @@
 
  @keyframes slideshow{
-    10% {
+    0% {
         background-image: url(static/hotelview.jpeg);
     }
     30% {
@@ -19,14 +19,13 @@
  body{
     width: 100vw;
     height: auto;
-    background-color:rgb(39, 30, 28);
+    /* background-color:rgb(39, 30, 28); */
     background-image: url(hotelview.jpeg);
-    animation: slideshow 30s infinite;
-    /* background-size: cover; */
+    animation: slideshow 60s infinite;
     background-repeat: none;
  }
  #map {
-    height: 75vh;
+    height: 80vh;
     width: 50vw;
     margin: auto;
     position: absolute;
@@ -86,7 +85,7 @@ a:hover{
     /* border-bottom-style: solid;
     border-bottom-color: black; */
     /* text-decoration: overline;  */
-    border-bottom: 1.5px solid hsla(39, 61%, 85%,0.6);
+    border-bottom: 1.5px solid hsla(39, 61%, 85%,1);
     border-width: 80%;
     padding-bottom: 0;
 }

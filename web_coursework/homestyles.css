@@ -326,7 +326,7 @@ color: #f0e0c2;
 .dinerimage img:hover{
     transform: scaleX(1.15);
     filter: brightness(1);
-    transition: all;
+    transition: all 2s;
 }
 .dinerimage::-webkit-scrollbar{
     display: none;
@@ -418,11 +418,15 @@ color: #f0e0c2;
 .pool{height: 70vh;
     display: flex;
     background-color: rgb(39, 30, 28);
+    padding-bottom: 30px;
 }
 .poolimage{
     height: 70vh;
     width: 50%;
-    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
     border-top: solid 1px;
     border-radius: 10px;
     border-top-right-radius:30px;
@@ -430,16 +434,18 @@ color: #f0e0c2;
     border-color:rgb(39, 30, 28);
     padding-bottom: 10px;
     border-top-color: #f0e0c2;
-    
-    
-   
+      
 }
 .poolimage img{
     height: 100%;
     width: 100%;
     overflow: hidden;
     filter: brightness(0.7);
+    object-fit: cover;
     
+}
+.poolimage .out{
+    display: none;
 }
 .poolimage img:hover{
     transform: scaleX(1.15);
@@ -469,7 +475,7 @@ color: #f0e0c2;
     padding-left: 10px;
 }
 .conference{
-    background-color: white;
+    background-color: #fff3dd;
     height: auto;
     width: 100vw;
 }

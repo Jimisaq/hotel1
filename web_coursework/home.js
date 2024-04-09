@@ -46,15 +46,12 @@ document.querySelector('.imgcontainer').addEventListener('mouseleave',function()
 //  let currentSelection = 0;
 //  var container = document.querySelector('.conference');
 //  const confs = document.querySelectorAll('.conferenceimg .conf');
-//  document.querySelector('.conferenceimg').addEventListener('click',function(){
-//     confs[currentSelection].style.display='none';
-//     currentSelection=currentSelection<confs.length-1?currentSelection+1:0;
-//     confs[currentSelection].style.display='flex';
-//     confs[currentSelection].style.transition='all 2s';
-//     confs[currentSelection].style.transform='scaleX(1.5)';
-    
-    
-// })
+document.querySelector('.imgcontainer img').addEventListener('click',function(){
+    let currentImageIndex=0;
+    images[currentImageIndex].style.display='none';
+    currentImageIndex=currentImageIndex<images.length-1?currentImageIndex+1:0;
+    images[currentImageIndex].style.display="flex";
+})
 
 let currentSelection = 0;
 const confs = document.querySelectorAll('.conferenceimg .conf');
