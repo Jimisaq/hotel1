@@ -351,13 +351,6 @@ color: #f0e0c2;
     padding-left: 10px;
 }
 /* stop */
-.gym{
-    height: 70vh;
-    width: 100%;
-    text-align: left;
-    margin-top: 30px;
-    display: flex;  
-}
 
 .amenities{
     margin-top: 60px;
@@ -367,29 +360,67 @@ color: #f0e0c2;
 }
 
 .gym{
+    height: 70vh;
+    width: 100vw;
+    text-align: left;
+    margin-top: 30px; 
+    position:relative;
     display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 100%;
     background-color: rgb(39, 30, 28);
     margin-bottom: 30px;
+    
+}
+/* .gym1{
+    height: 70vh;
+    width: 50vh;
+    min-width: 50vh;
+    text-align: left; 
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: rgb(39, 30, 28);
+    margin-bottom: 30px;
+    flex-shrink: 0;
+    
+}
+.gym1 .gymimage{
+    flex-shrink: 0;
+}
+.gym1::-webkit-scrollbar{
+    display: none;
+} */
+.gym::-webkit-scrollbar{
+    display: none;
 }
 .gymimage{
     height: 70vh;
     width: 50vw;
     overflow: hidden;
     border-top: solid 1px;
-    border-top-left-radius:30px;
+    border-radius:30px;
     border-color:#f0e0c2;
     padding-bottom: 10px;
-   
+    object-fit: fill;
+    flex-shrink: 0;
+    margin-right: 20px;
+    padding-bottom: 10px;
 }
 .gymimage img{
-    height: 99.5%;
+    height: 70%;
     width: 100%;
     overflow: hidden;
     filter: brightness(0.7);
+    border-radius: 30px;
     
 }
 .gymimage img:hover{
-    transform: scaleX(1.15);
+    transform: scaleX(1.05);
     filter: brightness(1);
     transition: all 2s;
 }
@@ -398,23 +429,35 @@ color: #f0e0c2;
 
 }
 .gymdesc{
-    border-bottom-right-radius: 30px;
-    height: 70vh;
-    width: 50vw;
+    border-radius: 30px;
+    height: auto;
+    width: 100%;
     border-bottom: solid 2px;
     border-color: rgb(39, 30, 28);
     background-color:rgb(240,224,194);
     overflow: hidden;
+    margin-right: 15px;
 }
 .gymdesc h2{
     padding-left: 20px;
     text-decoration: overline;
     color: rgb(39, 30, 28);
 }
-.gymdesc p{
+.gymdesc h2:hover{
+    cursor: pointer;
+}
+.desc1{
     color: rgb(39, 30, 28);
     padding-left: 20px;
+    display: none;
+    text-align: center;
+    padding: 20px;
+    height: auto;
 }
+.gymdesc h2:hover ~ .desc1 {
+    display: block;
+}
+
 .pool{height: 70vh;
     display: flex;
     background-color: rgb(39, 30, 28);

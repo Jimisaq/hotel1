@@ -42,17 +42,25 @@ document.querySelector('.imgcontainer').addEventListener('mouseleave',function()
     sevare.style.transition='opacity 1s';
 })
 
-//conference rooms
-//  let currentSelection = 0;
-//  var container = document.querySelector('.conference');
-//  const confs = document.querySelectorAll('.conferenceimg .conf');
-document.querySelector('.imgcontainer img').addEventListener('click',function(){
-    let currentImageIndex=0;
-    images[currentImageIndex].style.display='none';
-    currentImageIndex=currentImageIndex<images.length-1?currentImageIndex+1:0;
-    images[currentImageIndex].style.display="flex";
-})
+// //conference rooms
+// //  let currentSelection = 0;
+// //  var container = document.querySelector('.conference');
+// //  const confs = document.querySelectorAll('.conferenceimg .conf');
+// document.querySelector('.imgcontainer img').addEventListener('click',function(){
+//     let currentImageIndex=0;
+//     images[currentImageIndex].style.display='none';
+//     currentImageIndex=currentImageIndex<images.length-1?currentImageIndex+1:0;
+//     images[currentImageIndex].style.display="flex";
+// })
 
+//image description popup
+// var label=document.querySelector('gymdesk');
+// var desc1 = document.getElementById('desc1');
+// document.querySelector('gymdesc').addEventListener('click',function(){
+//     label.style.backgroundColor='rgba(255,0,255,0.3)';
+// })
+
+//conference rooms
 let currentSelection = 0;
 const confs = document.querySelectorAll('.conferenceimg .conf');
 
