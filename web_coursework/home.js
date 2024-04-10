@@ -19,17 +19,26 @@ window.addEventListener('scroll', function() {
 });
 
 let currentImageIndex=0;
+//scrollbar on the top image container
+function updateScrollPosition(){
+    const handle=document.querySelector('.handle');
+    handle.style.left='${currentImageIndex * 20}%';
+}
+
 const images=document.querySelectorAll('.imgcontainer .imageitem');
 document.getElementById('prev').addEventListener('click',function(){
     images[currentImageIndex].style.display='none';
     currentImageIndex=currentImageIndex>0?currentImageIndex-1:images.length-1;
     images[currentImageIndex].style.display='flex';
+    updateScrollPosition();
 })
 document.getElementById('next').addEventListener('click',function(){
 images[currentImageIndex].style.display='none';
 currentImageIndex=currentImageIndex<images.length-1?currentImageIndex+1:0;
 images[currentImageIndex].style.display="flex";
+updateScrollPosition();
 })
+
 
 //hotel name overlay
 const sevare=document.querySelector('.sevare');
