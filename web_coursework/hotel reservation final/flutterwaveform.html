@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+    <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+        <button type="submit">Pay Now</button>
+     
+
+
+
+      <input type="hidden" name="public_key" value="FLWPUBK_TEST-bba650c9c1177a792dcc2795f0592e5d-X" />
+<input type="hidden" name="tx_ref" value="FLWSECK_TEST-f6e70066136bbdf4d4791e52903b96a4-X" />
+
+<DIV class="form-group" >
+    <label for="amount"> AMOUNT:</label>
+    <input type="text" name="amount" value=" ENTER AMOUNT" /> 
+
+</DIV>
+
+<input type="hidden" name="currency" value="USD" />
+
+<div class="form-group">
+<label for="name"> FIRST NAME</label>
+<input type="text" name="customer[name]" value=" FIRST NAME" />
+</div>
+
+<div class="form-group">
+<label for="EMAIL"> EMAIL</label>
+<input type="text" name="customer[email]" value="ENTER YOUR EMAIL" />
+</div>
+
+
+<input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
+
+<input type="hidden" name="meta[token]" value="54" />
+
+<input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
+
+
+</form>
+
+
+</html>
