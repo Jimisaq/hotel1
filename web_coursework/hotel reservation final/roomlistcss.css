@@ -1,17 +1,52 @@
 /* CSS styles */
 
+.overall{
+  background-color: #fff3dd;
+}
+.header{
+  background-color: #fff3dd;
+  height: auto;
+}
+.header img{
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Automatically adjust the height */
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.header h1{
+  text-align: center;
+    color: #33221a;
+}
+.accom{
+  background-color: #fff3dd;
+  float: inline-start;
+ 
+}
+.accom h1{
+  text-align: center;
+}
+.accom p{
+  text-align: center;
+  /* line-height: 1; Add this to remove unnecessary space between words */
+font: size 50px;
+}
+
 .room-listing {
     display: flex;
     flex-wrap: wrap;
+    background-color: #fff3dd;
     justify-content: space-around;
+    margin: 20%;
+    transform: scale(1);
   }
   
   .room {
-    width: calc(30% - 20px); /* Adjust width of each room with spacing */
-    margin-bottom: 20px;
+    width: 80%; /* Adjust width of each room with spacing */
+    margin-bottom: 0px;
     position: relative;
     border-radius: 5px;
     overflow: hidden; /* Ensure images do not overflow */
+    align-content: center;
   }
   
   .room img {
@@ -46,7 +81,23 @@
   
   .description-popup {
     display: Room;
+
+
   }
+ .description-popup h1{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 240 px;
+  color:#f7c670;
+  
+}
+
+
   
   .show {
     display: block;
@@ -57,10 +108,10 @@
     margin: 0;
     padding: 0;
   }
-  .overall{
+  /* .overall{
     display: grid; 
     height: 100%;
     background-color: #f6ddb2;
     position: absolute;
     
-}
+} */

@@ -1,0 +1,72 @@
+.overall{
+    background-color: #D2B48C;
+}
+
+.image {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+   
+   img {
+     max-width: 260%;
+     max-height:260%;
+   }
+   
+   .text {
+     font-size: 19px;
+     float: right;
+     vertical-align: top;
+     background-color: #D2B48C;
+     /* width: 50px; */
+     
+   }
+   .text h1{
+color: #33221a;
+   }
+   .text p{
+    color:#33221a;
+   }
+   .form-container img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    
+  }
+  .form-container p{
+    text-align: center;
+    color: #33221a;
+  }
+  
+
+  .introtext h1{
+text-align: center;
+font-size: 25px;
+color: #33221a;
+  }
+  .introtext p{
+    text-align: center;
+    font-size: 19px;
+    color: #33221a;
+    
+  }
+  .book-now-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-now-button button {
+    background-color: #b26938; /* Light Brown Color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.book-now-button button:hover {
+    background-color: #A9825D; /* Darker shade for hover effect */
+}
