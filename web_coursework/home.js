@@ -22,7 +22,8 @@ let currentImageIndex=0;
 //scrollbar on the top image container
 function updateScrollPosition(){
     const handle=document.querySelector('.handle');
-    handle.style.left='${currentImageIndex * 20}%';
+    handle.style.left=`${currentImageIndex * 100/images.length}%`;
+    
 }
 
 const images=document.querySelectorAll('.imgcontainer .imageitem');
@@ -51,23 +52,6 @@ document.querySelector('.imgcontainer').addEventListener('mouseleave',function()
     sevare.style.transition='opacity 1s';
 })
 
-// //conference rooms
-// //  let currentSelection = 0;
-// //  var container = document.querySelector('.conference');
-// //  const confs = document.querySelectorAll('.conferenceimg .conf');
-// document.querySelector('.imgcontainer img').addEventListener('click',function(){
-//     let currentImageIndex=0;
-//     images[currentImageIndex].style.display='none';
-//     currentImageIndex=currentImageIndex<images.length-1?currentImageIndex+1:0;
-//     images[currentImageIndex].style.display="flex";
-// })
-
-//image description popup
-// var label=document.querySelector('gymdesk');
-// var desc1 = document.getElementById('desc1');
-// document.querySelector('gymdesc').addEventListener('click',function(){
-//     label.style.backgroundColor='rgba(255,0,255,0.3)';
-// })
 
 //conference rooms
 let currentSelection = 0;
@@ -77,12 +61,20 @@ function changeImage() {
     confs[currentSelection].style.display = 'none';
     currentSelection = currentSelection < confs.length - 1 ? currentSelection + 1 : 0;
     confs[currentSelection].style.display = 'flex';
-    confs[currentSelection].style.transition = 'all 2s';
+    confs[currentSelection].style.transition = 'display 2s';
     confs[currentSelection].style.transform = 'scaleX(1.5)';
     confs[currentSelection].style.filter = 'brightness(1)';
-
+    
+    updateDisplay();
     setTimeout(changeImage, 3000);
+    
 }
 
 // Change image after 3 seconds
 changeImage();
+
+ 
+ function updateDisplay(){
+    const handle2 = document.querySelector('.handle2')
+    handle2.style.left=`${currentSelection*100/confs.length}%`;
+ }
