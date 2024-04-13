@@ -71,12 +71,23 @@
       margin-bottom: 10px; /* Add some space between inputs */
     }
   </style>
+  <link rel="stylesheet" href="roomlistcss.css">
+  <script src="../home.js"></script>
 </head>
 <body>
   <div class="overall">
+    <div class="header">
+      <img src="../static/sevarelogo22.jpeg" alt="logo">
+      <h1 class="hotelname">SEVARE HUCHT HOTEL</h1>
+    </div>
+    <div class="topnav">
+      <a href="../homepage.html"><p>Home</p>
+      </a>
+      <a href="room listings.html" target="_parent"><p>Rooms and Suites</p></a>
+      <a href="../location.html" target="_parent"><p>Location </p></a>
+    </div>
     <div class="form-container">
-      <img src="images/sevarelogo22.jpeg" alt="Hotel Logo" />
-      <p><b>Sevare Hutch Hotel</b></p>
+      
       <h1>Reservation Form</h1>
       <form id="reservation-form" action="/web_coursework/hotel reservation final/flutterwaveform.html"> 
         <div class="form-group">
@@ -89,13 +100,16 @@
             <option value="room4">Suite</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="name">First Name:</label>
-          <input type="text" id="name" />
-        </div>
-        <div class="form-group">
-          <label for="name">Last Name:</label>
-          <input type="text" id="name" />
+        <div class="form-group name">
+           <div class="firstname">
+             <label for="name">First Name:</label>
+             <input type="text" id="name" />
+           </div>
+          
+           <div class="lastname">
+             <label for="name">Last Name:</label>
+             <input type="text" id="name" />
+           </div>
         </div>
         <div class="form-group">
           <label for="checkin">Check-in date:</label>
@@ -106,10 +120,7 @@
           <input type="text" id="checkout" />
         </div>
         
-        <div class="form-group">
-          <label for="name">Special Requests:</label>
-          <input type="text" id="Requests" />
-        </div>
+        
         <div class="form-group">
           <label for="name">Number of Guests</label>
           <input type="text" id="No. of Guests" />
@@ -124,10 +135,33 @@
           <label for="phone">Phone:</label>
           <input type="tel" id="phone" />
         </div>
+
+        <div class="form-group">
+          <label for="name">Special Requests:</label>
+          <input type="text" id="Requests" />
+        </div>
+        <fieldset>
+          <label for="freePickup"></label><input type="radio" name="freePickup" value="Yes" id="freePickup">Yes</label>
+          <label for="freePickup"></label><input type="radio" name="freePickup" value="No" id="freePickup">No</label>
+        </fieldset>
         <div class="form-group">
           <button type="submit">Submit</button>
         </div>
       </form>
+    </div>
+    <div class="footer">
+      <h2>Sevare Hutch Hotel</h2>
+      <p>Alexanderplatz Street, Berlin, Germany</p>
+      <p>Tel: +49 30 901821/ +49 30 901820</p>
+      <p>E-mail: <span>hutchsevare@gmail12.com</span></p>
+      <h2>Follow us: </h2>
+      <div class="icons">
+        <img src="../static/facebook.jpg" alt="sevarehutch">
+        <img src="../static/instagram.jpg" alt="sevarehutch">
+        <img src="../static/twitter.jpg" alt="sevarehutch">
+      </div>
+      
+      <p>&copy; 2024 Sevare Hutch Hotel. All Rights Reserved.</p>
     </div>
   </div>
 </body>

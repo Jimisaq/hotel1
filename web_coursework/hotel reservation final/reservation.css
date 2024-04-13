@@ -24,37 +24,11 @@ body {
   background-size: 100; 
   background-repeat: repeat;
 }
-/* Styles for Single Room */
-#room1-info {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Styles for Double Room */
-  #room2-info {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Styles for Couple's Room */
-  #room3-info {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Styles for Suite */
-  #room4-info {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+form{
+  width: 60vh;
+}
+
+
   
 
 .form-container {
@@ -91,11 +65,23 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 30px;
+  text-decoration: underline;
 }
 
 .form-group {
   margin-bottom: 20px;
+  width: 100%;
 }
+.form-group.name{
+  display: flex;
+  flex-direction: row;
+  gap:2%;
+}
+
+#name{
+  width: 43vh;
+}
+
 
 label {
   display: block;

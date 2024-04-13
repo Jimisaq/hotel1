@@ -5,56 +5,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hotel Room Listing</title>
 <link rel="stylesheet" href="roomlistcss.css">
+<script src="../home.js"></script>
 </head>
 <body style="background-color: #fff3dd;">
   <div class="overall">
         
     <div class="header">
-        <img src="images/sevarelogo22.jpeg" alt="logo">
-        <h1 class="hotelname">SEVARE HUCHT HOTEL</h1>
-    </div>
-  <div class="accom">
-<h1><b>ROOMS & SUITES</b></h1>
-  <p>Welcome to the prestigious German Sevare Hutch Hotel, where luxury meets sophistication in every corner.<br>
-    Our hotel boasts an exquisite selection of rooms designed to cater to the discerning tastes of our esteemed<br>
-   guests. Experience unparalleled comfort and relaxation in a space tailored to meet your individual needs.<br></p>
+      <img src="../static/sevarelogo22.jpeg" alt="logo">
+      <h1 class="hotelname">SEVARE HUCHT HOTEL</h1>
   </div>
+  <div class="topnav">
+    <a href="../homepage.html"><p>Home</p>
+    </a>
+    <a href="room listings.html" target="_parent"><p>Rooms and Suites</p></a>
+    <a href="../location.html" target="_parent"><p>Location </p></a>
+  </div>
+  <div class="accom">
+      <h1><b>ROOMS & SUITES</b></h1>
+      <p>Welcome to the prestigious German Sevare Hutch Hotel, where luxury meets sophistication in every corner.<br>
+         Our hotel boasts an exquisite selection of rooms designed to cater to the discerning tastes of our esteemed<br>
+        guests. Experience unparalleled comfort and relaxation in a space tailored to meet your individual needs.<br></p>
+      </div>
 <div class="room-listing">
   <div class="room">
     <img src="images/Couples room 1.jpg" alt="couples special">
-    <button class="description-btn" onclick="showDescription('Room 1')">Room Description</button>
+    <!-- <button class="description-btn" onclick="showDescription('Room 1')">Room Description</button> -->
     <div class="description-popup" id="room1-description">
       <h1>The Amoure Special</h1>
       <p>This room features a comfortable queen-size bed, ensuite bathroom, and stunning views of the city skyline.</p>
+      <a href="The Amoure Special.html" target="_parent"><button class="check">check out</button></a>
     </div>
   </div>
   <div class="room">
     <img src="images/doubleroom.jpeg" alt="doubleroom">
-    <button class="description-btn" onclick="showDescription('Room 2')">Room Description</button>
+    <!-- <button class="description-btn" onclick="showDescription('Room 2')">Room Description</button> -->
     <div class="description-popup" id="room2-description">
       <h1>The Doppelt</h1>
       <p>Immerse yourself in the elegance of the Doppelt, where comfort and style intertwine seamlessly.Enjoy a relaxing stay in this spacious double room with two king-size beds, and luxury amenities.</p>
+      <a href="The Doppelt.html" target="_parent"><button class="check">check out</button></a>
     </div>
   </div>
   <div class="room">
     <img src="images/singlesingle.jpeg" alt="singlesingle">
-    <button class="description-btn" onclick="showDescription('Room 3')">Room Description</button>
+    <!-- <button class="description-btn" onclick="showDescription('Room 3')">Room Description</button> -->
     <div class="description-popup" id="room3-description">
       <h1>The Einzel</h1>
       <p>
         Einzel room provides the perfect haven for solo travelers.<br>
         This deluxe room offers modern furnishings,a king-size bed, a workspace, and complimentary high-speed internet access.</p>
-    </div>
+        <a href="The Einzel.html" target="_parent"><button class="check">check out</button></a>
+      </div>
   </div>
   <div class="room">
     <img src="images/suite.jpg" alt="suite">
-    <button class="description-btn" onclick="showDescription('Room 4')">Room Description</button>
+    <!-- <button class="description-btn" onclick="showDescription('Room 4')">Room Description</button> -->
     <div class="description-popup" id="room4-description">
       <h1>The Luxus Suite</h1>
       <p>Relax in style with a stay in this executive suite featuring a private balcony, minibar, and 24-hour room service.</p>
+      <button class="check">check out</button>
     </div>
   </div>
+
+  <div class="footer">
+    <h2>Sevare Hutch Hotel</h2>
+    <p>Alexanderplatz Street, Berlin, Germany</p>
+    <p>Tel: +49 30 901821/ +49 30 901820</p>
+    <p>E-mail: <span>hutchsevare@gmail12.com</span></p>
+    <h2>Follow us: </h2>
+    <div class="icons">
+      <img src="../static/facebook.jpg" alt="sevarehutch">
+      <img src="../static/instagram.jpg" alt="sevarehutch">
+      <img src="../static/twitter.jpg" alt="sevarehutch">
+    </div>
+    
+    <p>&copy; 2024 Sevare Hutch Hotel. All Rights Reserved.</p>
+  </div>  
 </div>
+   
 
 <!-- JavaScript for handling description popups -->
 <script>
