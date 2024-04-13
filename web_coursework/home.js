@@ -78,3 +78,12 @@ changeImage();
     const handle2 = document.querySelector('.handle2')
     handle2.style.left=`${currentSelection*100/confs.length}%`;
  }
+ 
+ let currentImg=0;
+ document.getElementById('pools').addEventListener('click',function()
+{
+    const pools= document.querySelectorAll('.poolimage img');
+    pools[currentImg].style.display='none';
+    currentImg=currentImg<pools.length-1?currentImg+1:0;
+    pools[currentImg].style.display='flex';
+});

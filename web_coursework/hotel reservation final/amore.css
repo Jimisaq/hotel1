@@ -3,31 +3,35 @@
     background-image: url('images/couples\ background.jpg');;
 }
 
+.amoree{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
 .image {
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
+    height: 70vh;
+    width: 100vw;
    }
    
    img {
-     max-width: 260%;
-     max-height:260%;
+     height: 60vh;
+     max-height:60vh;
    }
    
    .text {
      font-size: 19px;
-     float: right;
-     vertical-align: top;
-    /* background-color: #f5e0b9;
-     /* width: 50px; */
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
      
    }
+
    .text h1{
-color: #33221a;
+    color: #33221a;
+    text-decoration: underline;
    }
    .text p{
     color:#33221a;
+    font-family: Gelasio;
    }
    .form-container img {
     width: 50px; /* Adjust the width as needed */
@@ -41,7 +45,11 @@ color: #33221a;
     color: #33221a;
   }
   
-
+.introtext{
+  background-color: rgba(210, 105, 30, 0.589);
+  padding: 10px;
+  font-family: 'Derringer DB';
+}
   .introtext h1{
 text-align: center;
 font-size: 25px;

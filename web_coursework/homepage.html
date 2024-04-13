@@ -81,22 +81,18 @@
                 <div class="gym">
                   <!-- <div class="gym1"> -->
                     <div class="gymimage">
-                      <img src="static/gym.jpeg" alt="fitness center">
+                      <img src="static/loby.jpg" alt="fitness center">
                       <div class="gymdesc">
-                      <h2 >Gym</h2>
+                      <h2 >Loby</h2>
                       <p class="desc1">
-                        State-of-the-Art Fitness Center    
-                        Our 24/7 center features 
-                        cutting-edge Technogy equipment, 
-                        offering seamless workouts with stunning views. 
-                        Our certified Personal Trainer tailors' programs  
-                        for all levels, ensuring you stay energized and on 
-                        top of your game.
+                        The lobby of Sevare Hucht Hotel welcomes guests with a blend
+                         of sophistication and tranquility. Bathed in natural light, 
+                         its elegant decor and comfortable seating create an inviting 
+                         ambiance, offering a serene retreat from the bustling city outside.
                       </p>
                     </div>   
                     
                     </div>
-                  <!-- </div> -->
                     
                     <div class="gymimage">
                       <img src="static/bar2.jpg" alt="fitness center">
@@ -116,13 +112,19 @@
                     <div class="gymimage">
                       <img src="static/gym.jpeg" alt="fitness center">
                       <div class="gymdesc">
-                      <h2>Something Else</h2>
-                      <p>
-                        
+                      <h2>Gym</h2>
+                      <p class="desc1">
+                        State-of-the-Art Fitness Center    
+                        Our 24/7 center features 
+                        cutting-edge Technogy equipment, 
+                        offering seamless workouts with stunning views. 
+                        Our certified Personal Trainer tailors' programs  
+                        for all levels, ensuring you stay energized and on 
+                        top of your game.
                       </p>
                     </div>
-                    </div>
-                    
+                  </div>
+                                      
                 </div>
                                 
                 <div class="pool">
@@ -144,6 +146,7 @@
                   <div class="poolimage">
                     <img src="static/indoorpool.jpeg" alt="swimming pool" class="in">
                     <img src="static/outdoorpool.jpg" alt="swimming pool" class="out">
+                    <button id="pools" class="poolswitch">></button>
                   </div>
               </div>
               <div class="conference">
@@ -171,6 +174,26 @@
                   </div> 
                 </div>
           </div>  
+          <div class="feedback-form">
+            <h2>Feedback</h2>
+            <form action="/submit_feedback" method="post">
+              <div class="feedback">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="feedback">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="feedback">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+              </div>
+              <div class="feedback">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
           <div class="footer">
             <h2>Sevare Hutch Hotel</h2>
             <p>Alexanderplatz Street, Berlin, Germany</p>
