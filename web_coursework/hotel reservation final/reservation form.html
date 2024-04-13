@@ -93,7 +93,7 @@
         <div class="form-group">
           <label for="rooms">Select a room:</label>
           <select id="rooms">
-            <option value="room1">           </option>
+            <option value="room1">--select--</option>
             <option value="room1">The Einzel</option>
             <option value="room2">The Doppelt</option>
             <option value="room3">The Amoure Special</option>
@@ -103,42 +103,42 @@
         <div class="form-group name">
            <div class="firstname">
              <label for="name">First Name:</label>
-             <input type="text" id="name" />
+             <input type="text" id="name" placeholder="John" />
            </div>
           
            <div class="lastname">
              <label for="name">Last Name:</label>
-             <input type="text" id="name" />
+             <input type="text" id="name" placeholder="Doe" />
            </div>
         </div>
         <div class="form-group">
           <label for="checkin">Check-in date:</label>
-          <input type="text" id="checkin" />
+          <input type="text" id="checkin" placeholder="YYYY-MM-DD"/>
         </div>
         <div class="form-group">
           <label for="checkout">Check-out date:</label>
-          <input type="text" id="checkout" />
+          <input type="text" id="checkout" placeholder="YYYY-MM-DD" />
         </div>
         
         
         <div class="form-group">
           <label for="name">Number of Guests</label>
-          <input type="text" id="No. of Guests" />
+          <input type="text" id="No. of Guests" placeholder="00"/>
         </div>
        
       
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" placeholder="john@example.com"/>
         </div>
         <div class="form-group">
           <label for="phone">Phone:</label>
-          <input type="tel" id="phone" />
+          <input type="tel" id="phone" placeholder="0123456789" />
         </div>
 
         <div class="form-group">
           <label for="name">Special Requests:</label>
-          <input type="text" id="Requests" />
+          <input type="text" id="Requests" placeholder="-----------" />
         </div>
         <fieldset>
           <legend>Free Pick Up</legend>
@@ -147,6 +147,14 @@
           <label for="freePickupNo">No</label>
           <input type="radio" name="freePickup" value="No" id="freePickupNo">
         </fieldset>
+        <label for="Payments">Select a payment method:</label>
+        <select id="Payment">
+          <option value="payment1">--select--</option>
+          <option value="payment1">Credit card(VISA, Mastercard)</option>
+          <option value="payment2">Debit card(Discovery,Lufhansa)</option>
+          <option value="payment3">Bank Transfer</option>
+          <option value="payment4">Cash App</option>
+        </select>
         <div class="form-group">
           <button type="submit">Submit</button>
         </div>

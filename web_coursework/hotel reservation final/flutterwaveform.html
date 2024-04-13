@@ -11,23 +11,23 @@
         <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
             <div class="form-group">
                 <label for="amount">Amount:</label>
-                <input type="text" name="amount" value="Enter Amount">
+                <input type="text" name="amount" placeholder="Enter Amount">
             </div>
             <input type="hidden" name="currency" value="USD">
             <div class="form-group">
                 <label for="name">First Name:</label>
-                <input type="text" name="customer[name]" value="First Name">
+                <input type="text" name="customer[name]" placeholder="John">
             </div>
             <div class="form-group">
                 <label for="name">Last Name:</label>
-                <input type="text" name="customer[name]" value="Last Name">
+                <input type="text" name="customer[name]" placeholder="Doe">
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="text" name="customer[email]" value="Enter Your Email">
+                <input type="text" name="customer[email]" placeholder="john@example.com">
             </div>
             <input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/">
-            <input type="hidden" name="meta[token]" value="54">
+            <input type="hidden" name="meta[token]" placeholder="54">
             <button type="submit">Pay Now</button>
         </form>
     </div>
