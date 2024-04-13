@@ -533,10 +533,11 @@ color: #f0e0c2;
     display: inline-block;
 }
 
+/*Swimming pools*/
 .pool{height: 70vh;
     display: flex;
     background-color: #2b1700;
-    /* padding-bottom: 30px; */
+    margin-top: 10px;
 }
 .poolimage{
     height: 70vh;
@@ -573,6 +574,27 @@ color: #f0e0c2;
 .poolimage::-webkit-scrollbar{
     display: none;
 
+}
+.poolimg.two{
+    display: none;
+}
+.poolimage .poolswitch{
+    position:absolute;
+    right: 0;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    color: whitesmoke;
+    background-color:rgba(39, 30, 28,0.65) ;
+    height: 50px;
+    width: 50px;
+    border: solid 1px white;
+    border-radius: 30%;
+    font-size: 2.2rem;
+    z-index: 5000;
+    opacity: 0.3;
+}
+.poolimage .poolswitch:hover{
+    opacity: 1;
 }
 .pooldesc{
     height: 70vh;
@@ -617,7 +639,7 @@ color: #f0e0c2;
 .conferenceimg{
     height: 75vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -637,7 +659,7 @@ color: #f0e0c2;
 .scrollbar2{
     position: absolute;
     left: 0;
-    bottom: 10.55%;
+    margin-top: 78vh;
     height: 2px;
     width: 60%;
     background-color:#f0e0c2 ;
@@ -647,7 +669,7 @@ color: #f0e0c2;
     
 }
 .handle2{
-    position: sticky;
+    position: absolute;
     bottom: 0;
     left: 0;
     height: 100%;
@@ -683,6 +705,68 @@ color: #f0e0c2;
 .conferenceimg::-webkit-scrollbar{
 display: none;
 }
+
+.feedback-form {
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    background-color: rgba(210, 105, 30, 0.568);
+    border-radius: 8px;
+}
+.feedback-form:hover{
+    filter: brightness(0.7);
+    box-shadow: 0 0 3px 1px rgb(17, 17, 17);
+}
+
+.feedback-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: solid ;
+}
+
+.feedback-form .feedback {
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff3dd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.feedback-form input[type="submit"] {
+    display: block;
+    width: 50%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(44, 24, 10);
+    color: #fff3dd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: rgba(44, 24, 10, 0.342) ;
+    box-shadow: 0 0 3px 1px rgb(17, 17, 17);
+}
+
+
 .footer{
     margin-top: 0;
     width: 100vw;
