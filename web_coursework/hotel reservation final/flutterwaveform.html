@@ -1,42 +1,35 @@
 <!DOCTYPE html>
-
-
-    <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
-        <button type="submit">Pay Now</button>
-     
-
-
-
-      <input type="hidden" name="public_key" value="FLWPUBK_TEST-bba650c9c1177a792dcc2795f0592e5d-X" />
-<input type="hidden" name="tx_ref" value="FLWSECK_TEST-f6e70066136bbdf4d4791e52903b96a4-X" />
-
-<DIV class="form-group" >
-    <label for="amount"> AMOUNT:</label>
-    <input type="text" name="amount" value=" ENTER AMOUNT" /> 
-
-</DIV>
-
-<input type="hidden" name="currency" value="USD" />
-
-<div class="form-group">
-<label for="name"> FIRST NAME</label>
-<input type="text" name="customer[name]" value=" FIRST NAME" />
-</div>
-
-<div class="form-group">
-<label for="EMAIL"> EMAIL</label>
-<input type="text" name="customer[email]" value="ENTER YOUR EMAIL" />
-</div>
-
-
-<input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
-
-<input type="hidden" name="meta[token]" value="54" />
-
-<input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
-
-
-</form>
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="text" name="amount" value="Enter Amount">
+            </div>
+            <input type="hidden" name="currency" value="USD">
+            <div class="form-group">
+                <label for="name">First Name:</label>
+                <input type="text" name="customer[name]" value="First Name">
+            </div>
+            <div class="form-group">
+                <label for="name">Last Name:</label>
+                <input type="text" name="customer[name]" value="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="customer[email]" value="Enter Your Email">
+            </div>
+            <input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/">
+            <input type="hidden" name="meta[token]" value="54">
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
 </html>

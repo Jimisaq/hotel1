@@ -78,7 +78,7 @@
   <div class="overall">
     <div class="header">
       <img src="../static/sevarelogo22.jpeg" alt="logo">
-      <h1 class="hotelname">SEVARE HUCHT HOTEL</h1>
+      <h1 class="hotelname">SEVARE HUTCH HOTEL</h1>
     </div>
     <div class="topnav">
       <a href="../homepage.html"><p>Home</p>
@@ -89,15 +89,15 @@
     <div class="form-container">
       
       <h1>Reservation Form</h1>
-      <form id="reservation-form" action="/web_coursework/hotel reservation final/flutterwaveform.html"> 
+      <form id="reservation-form" action="flutterwaveform.html"> 
         <div class="form-group">
           <label for="rooms">Select a room:</label>
           <select id="rooms">
             <option value="room1">           </option>
-            <option value="room1">Single Room</option>
-            <option value="room2">Double Room</option>
-            <option value="room3">Couple's Room</option>
-            <option value="room4">Suite</option>
+            <option value="room1">The Einzel</option>
+            <option value="room2">The Doppelt</option>
+            <option value="room3">The Amoure Special</option>
+            <option value="room4">Luxus Suite</option>
           </select>
         </div>
         <div class="form-group name">
@@ -141,8 +141,11 @@
           <input type="text" id="Requests" />
         </div>
         <fieldset>
-          <label for="freePickup"></label><input type="radio" name="freePickup" value="Yes" id="freePickup">Yes</label>
-          <label for="freePickup"></label><input type="radio" name="freePickup" value="No" id="freePickup">No</label>
+          <legend>Free Pick Up</legend>
+          <label for="freePickupYes">Yes</label>
+          <input type="radio" name="freePickup" value="Yes" id="freePickupYes">
+          <label for="freePickupNo">No</label>
+          <input type="radio" name="freePickup" value="No" id="freePickupNo">
         </fieldset>
         <div class="form-group">
           <button type="submit">Submit</button>
