@@ -323,7 +323,7 @@ h2.one:hover{
 .art{
     background-color: rgba(128, 128, 128,0.2);
     text-align: left;
-    height: 25vh;
+    height: auto;
     width: 100%;
     /* padding-left: 200px; */
     padding-top: 0;
@@ -345,7 +345,7 @@ h2.one:hover{
     border-color: grey;
     padding: 10px;
     margin-right: 20%;
-    margin-left: 15%;
+    margin-left: 15%;margin-bottom: 10px;
 }
 .art h2{
 color: #f0e0c2;
@@ -724,6 +724,11 @@ display: none;
     text-align: center;
     margin-bottom: 20px;
     border-bottom: solid ;
+}
+.feedback-form p{
+    font-family: courgette;
+    font-style: italic;
+    color: #fff3dd;
 }
 
 .feedback-form .feedback {
