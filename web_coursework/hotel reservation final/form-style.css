@@ -1,6 +1,6 @@
 /* Style for form container */
 .form-container {
-    width: 400px;
+    width: 100vw;
     margin: 0 auto;
     padding: 20px;
     background-color: #f7f7f7;

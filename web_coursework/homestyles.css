@@ -16,12 +16,12 @@ body::-webkit-scrollbar{
     display: grid; 
     width: 100vw;
     height: auto;
-    background-color: #2b1700; 
+    background-color: #fff3dd; 
     position: absolute;
     transition: all 2s;    
 }
 body{
-    background-color:#2b1700;
+    /* background-color:#fff3dd; */
     left: 0;
 
 }
@@ -80,7 +80,7 @@ body{
     z-index: 1000;
     width: 100%;
     height: 40px;
-    background-color: #8f734c8e;
+    background-color: #fff3dd;
     display:flex; 
     justify-content:center;
     align-items: center;
@@ -92,10 +92,8 @@ body{
 }
 
 a{
-    /* margin-right: 30px; */
-    color: #f0e0c2;
+    color: rgb(5, 5, 56);
     height: 100%;
-    /* padding: 10px; */
     font-size: medium;
     text-decoration: none;
     margin-left: 10px;
@@ -109,9 +107,6 @@ a{
     height: 10vh;
     background-color: #f0e0c2;
     z-index: 1000;
-    /* text-align: center;
-    align-items: center;
-    justify-content: center; */
 }
 .popup p{
     color: rgb(0, 0, 0);
@@ -126,13 +121,9 @@ a{
     color: rgb(39, 30, 28);
 }
 a:hover{
-    color: #f0e0c2;
     transform: scale(1.1);
     filter: brightness(3.5);
-    /* border-bottom-style: solid;
-    border-bottom-color: black; */
-    /* text-decoration: overline;  */
-    border: 2px inset hsla(39, 61%, 85%,0.6);
+    border: 2px inset hsla(41, 36%, 14%, 0.851);
     border-width: 80%;
     padding-bottom: -2px;
     text-decoration: none;
@@ -161,10 +152,10 @@ a:hover{
     display: flex;
     flex-direction: column;
     opacity: 0;
-    background-color: rgba(8, 8, 8, 0.4);
+    background-color: hsla(0, 3%, 6%, 0.2);
 }
 .sevare h1{
-    color: #7e481c;
+    color: rgba(123, 112, 86, 0.927);
     z-index: 1000; 
     /* font-family:Brush Scrip MT,Courgette ; */
     font-size: 6rem;
@@ -173,7 +164,7 @@ a:hover{
     margin-bottom: 0;
 }
 .sevare p{
-    color: #f0e0c2;
+    color: #fff3dd;
     font-family:Brush Scrip MT,Courgette ;
     z-index: 1000;
     font-size: 3rem;
@@ -190,7 +181,7 @@ a:hover{
     flex-direction: row;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    background-color: rgb(39, 30, 28);
+    background-color: #fff3dd;
 
 }
 .imgcontainer .imageitem{
@@ -274,22 +265,22 @@ button:hover{
 }
 .welcome{
     text-align: center;
-    background-color:#7e481c;
+    background-color:#fff3dd;
     height:auto ;
     width: 100%;
     margin-bottom: 5px;
 }
 .welcome h2{
-    color: #f0e0c2;
+    color: #000;
     height:20%;
     font-size: 30px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .one{
     padding-bottom: 5px;
 }
 #one{
-    color: #f0e0c2;
+    color: rgb(5, 5, 56);
     
 }
 /* .welcome::-webkit-scrollbar{
@@ -310,18 +301,18 @@ h2.one::after{
     box-shadow: 0 2px 4px rgba(00,00,00,0.5);
 }
 h2.one:hover{
-    color: rgb(39, 30, 28);
+    color: rgb(250, 246, 245);
     transform: scale(1.1);
     transition: all 2s;
     size: 60px;
     transform-box:content-box ;
     padding: 5px;
     border: 2px solid #000;
-    background-color:#f0e0c2 ;
+    background-color:rgba(255, 217, 0, 0.442) ;
     display: inline-block;
 }
 .art{
-    background-color: rgba(128, 128, 128,0.2);
+    /* background-color: #fff3dd; */
     text-align: left;
     height: auto;
     width: 100%;
@@ -358,7 +349,7 @@ color: #f0e0c2;
     grid-template-columns: auto auto;
     text-align: left;
     /* margin-top: 30px; */
-    background-color: hsla(0, 0%, 0%);
+    background-color: #fff3dd;
     display: inline-flex;  
 }
 
@@ -378,7 +369,6 @@ color: #f0e0c2;
     border-bottom-left-radius:30px;
     border-color:rgb(39, 30, 28);
     padding-bottom: 10px;
-    border-top-color: #f0e0c2;
     
     
    
@@ -400,6 +390,7 @@ color: #f0e0c2;
 
 }
 .desc{
+    background-color: #fff3dd;
     height: 70vh;
     width: 50%;
     border-bottom-left-radius: 30px;
@@ -408,9 +399,10 @@ color: #f0e0c2;
     /* background-color: white; */
     overflow: hidden;
     padding-left: 20px;
-    color:#f0e0c2 ;
+    color:#000 ;
 }
 .desc h2{
+    color: #000;
     padding-left: 10px;
     text-decoration: overline;
 }
@@ -536,7 +528,7 @@ color: #f0e0c2;
 /*Swimming pools*/
 .pool{height: 70vh;
     display: flex;
-    background-color: #2b1700;
+    background-color: #fff3dd;
     margin-top: 10px;
 }
 .poolimage{
@@ -605,7 +597,7 @@ color: #f0e0c2;
     /* background-color: white; */
     overflow: hidden;
     padding-left: 20px;
-    color:#f0e0c2 ;
+    color:#000;
 }
 .pooldesc h2{
     padding-left: 10px;
@@ -615,7 +607,7 @@ color: #f0e0c2;
     padding-left: 10px;
 }
 .conference{
-    background-color: #481f01;
+    background-color: #fff3dd;
     height: auto;
     width: 100vw;
 }
@@ -628,13 +620,13 @@ color: #f0e0c2;
 }
 .confdesc h2{
     margin-bottom: 0;
-    color: #f5f5dc;
+    color: #000;
     text-decoration: overline;
 }
 .confdesc p{
     text-align: center;
     font-family: Courgette;
-    color: #f5f5dc;
+    color: #000;
 }
 .conferenceimg{
     height: 75vh;
@@ -706,13 +698,14 @@ color: #f0e0c2;
 display: none;
 }
 
+
 .feedback-form {
     width: 60%;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 40px;
     padding-bottom: 10px;
-    background-color: rgba(210, 105, 30, 0.568);
+    background-color: #fff3dd;
     border-radius: 8px;
 }
 .feedback-form:hover{
